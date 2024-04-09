@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #5d1d99;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-image: url('img/background.jpg');
+    background-position: center top;
+    background-size: cover;
+    padding: 225px 0px 0px 0px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px #00000080;
+    transition: 0.25s;
+}
+
+aside {
+    background-color: white;
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px;
+    transition: 0.25s;
+}
+
+aside h1 {
+    text-align: center;
+    margin: 15px;
+}
+
+.caixaLogin {
+    background-color: #5d1d90;
+    padding: 2px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    transition: 0.25s;
+}
+
+.caixaLogin span {
+    transform: translateY(7px);
+    color: white;
+    font-size: 2em;
+}
+
+.caixaLogin input {
+    width: calc(100% - 49px);
+    border: none;
+    border-radius: 15px;
+    height: 35px;
+    transform: translateY(-2px);
+    padding: 5px;
+}
+
+label {
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    margin: auto;
+    height: 50px;
+    width: 240px;
+    margin-bottom: 10px;
+    background-color: #1d8872;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#EsqueciSenha {
+    background-color: transparent;
+    color: #1d8872;
+    border: #1d8872 solid 1px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 998px) {
+    body {
+        background: linear-gradient(180deg, #5d1d99, #1d8872);
+    }
+
+    main {
+        padding: 0px 0px 0px 300px;
+        width: 400px;
+        background-position: center left;
+        transition: 0.25s;
+    }
+
+    aside {
+        border-radius: 0px 20px 20px 0px;
+        transition: 0.25s;
+    }
+
+    .caixaLogin {
+        margin: 25px 0px;
+        transition: 0.25s;
+    }
+}
+
+@media screen and (min-width: 999px) {
+    body {
+        background: linear-gradient(180deg, #5d1d99, #1d8872);
+    }
+
+    main {
+        padding: 0px 400px 0px 0px;
+        width: 500px;
+        background-position: center right;
+        transition: 0.25s;
+    }
+
+    aside {
+        border-radius: 20px 0px 0px 20px;
+        transition: 0.25s;
+    }
+
+    .caixaLogin {
+        margin: 40px 0px;
+        transition: 0.25s;
+    }
+}
